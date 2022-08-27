@@ -1,3 +1,12 @@
+Чтобы запустить проект в директории проекта испоните эти команды
+
+для запуска необходимо установить node.js
+
+### `npm i`
+### `npm start`
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
