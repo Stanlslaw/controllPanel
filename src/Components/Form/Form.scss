@@ -1,11 +1,17 @@
 .Form{
+display: flex;
+flex-direction: column;
+flex: 1 0 auto;
 background-color: #fafafa;
 margin:0;
 padding: 0;
-width: 80vw;
+width: 90vw;
 min-width: 600px;
-min-height: 600px;
+min-height: 648px;
+height: 80vh;
 border-radius: 10px;
 overflow: hidden;
 box-shadow: 0 4px 9px 9px rgba(0, 0, 0, 0.25);
+margin: 32px auto;
+position: relative;
 }

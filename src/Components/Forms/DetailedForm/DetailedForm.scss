@@ -1,0 +1,23 @@
+.DetailedForm{
+    .DetailedFormTable *{
+        text-align: center;
+    }
+    .DetailedFormTable tr:nth-child(even){
+        background-color: rgb(245,245,245);
+    }
+    .DetailedFormTable thead tr:first-child{
+        background-color: rgb(52, 52, 52);
+        
+    }
+    .DetailedFormTable thead tr:first-child *{
+        color: white;
+        
+    }
+
+    .DetailedFormBox{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+}

@@ -1,11 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux';
+import { UpdateSelected } from '../../Slices/SelectedFormSlice.js';
 import "./FormHeader.scss"
 
 
 
-export default function FormHeader(){
-    const [ButtonState,SetButtonState]=useState(1);
+export default function FormHeader(props){
+    const ButtonState=useSelector((state)=>state.SelectedForm.value)
+    const dispatch=useDispatch()
 
     const handleButton=(e)=>{
         let listNum=e.currentTarget.getAttribute("listnum")
@@ -14,7 +16,7 @@ export default function FormHeader(){
             obj.className="FormHeaderButton"
         }
         e.currentTarget.className+=" choosed"
-        SetButtonState(listNum)
+        dispatch(UpdateSelected(listNum))
     }
 
     return(
